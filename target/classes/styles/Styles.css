@@ -1,0 +1,22 @@
+.progress-bar>*.bar { /* FX theme stylesheet */
+    -fx-background-color: #8DC64A;
+    -fx-padding: 0em;
+    -fx-background-insets: 0px;
+    -fx-background-radius: 0px;
+}
+
+.progress-bar>*.track { /* FX theme stylesheet */
+    -fx-background-color: #09111E;
+    fx-background-insets: 0px;
+    -fx-background-radius: 0px;
+}
+
+.text-input { /* FX theme stylesheet */
+    -fx-background-color: black;
+    -fx-background-insets: 0px, 1px;
+    -fx-background-radius: 0px, 0px;
+    -fx-cursor: text;
+    -fx-padding: 0.333333em 0.583em 0.333333em 0.33333em;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}

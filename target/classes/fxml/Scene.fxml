@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-border-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rasio.downloader.FXMLController">
+   <center>
+      <AnchorPane style="-fx-background-color: black;">
+         <children>
+            <VBox fx:id="download_item" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="464.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <Label layoutY="1.0" text="ADDING SOURCE FROM EXTERNAL DEVICE" textFill="#e40000">
+                           <font>
+                              <Font name="Open Sans Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="23.0" text="DEST: PROTECTED LOCAL STORAGE SET 5476-32" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <TextField fx:id="field_url">
+                     <VBox.margin>
+                        <Insets bottom="1.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane fx:id="title_bar" prefHeight="14.0" prefWidth="327.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0 0 1 0;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="3.0">
+               <children>
+                  <Label fx:id="title_name" style="-fx-background-color: white;" text="MODULE SC 08 MRC">
+                     <padding>
+                        <Insets bottom="1.0" left="3.0" right="40.0" />
+                     </padding>
+                     <font>
+                        <Font name="Open Sans Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Polygon fill="WHITE" points="-5.9999847412109375, -2.500011444091797, 12.0, -20.500015258789062, -6.0, -20.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </HBox>
+            <OctIconView fx:id="btn_close" fill="WHITE" glyphName="PLUS" size="13" wrappingWidth="10.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="btn_cancel" graphicTextGap="6.0" maxHeight="18.0" minWidth="83.0" prefHeight="18.0" prefWidth="113.0" style="-fx-shape: &quot;M 300 260 L 660 260 L 660 320 L 620 360 L 300 360 Z&quot;; -fx-border-color: WHITE;" text="CANCEL" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <OctIconView fill="WHITE" glyphName="PLUS" size="12" />
+               </graphic>
+               <font>
+                  <Font name="Open Sans Regular" size="11.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="btn_start" graphicTextGap="6.0" layoutX="123.0" maxHeight="18.0" minWidth="83.0" prefHeight="18.0" prefWidth="113.0" style="-fx-shape: &quot;M 300 260 L 660 260 L 660 320 L 620 360 L 300 360 Z&quot;; -fx-border-color: WHITE;" text="START" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="123.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <OctIconView fill="WHITE" glyphName="PLUS" size="12" />
+               </graphic>
+               <font>
+                  <Font name="Open Sans Regular" size="11.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="3.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
