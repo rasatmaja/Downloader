@@ -33,7 +33,7 @@ java -jar Downloader-1.0.jar
 
 ## Screenshot
 <p align="center">
-  <img src="./screenshots/main-scene.png">
+  <img src="./screenshots/main-scene.PNG">
 </p>
 
 <p align="center">
